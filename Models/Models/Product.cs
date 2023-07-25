@@ -13,7 +13,7 @@ namespace Models.Models
     public class Product
     {
         [Key]
-      
+
         public int Id { get; set; }
         [Required]
         public string Title { get; set; }
@@ -49,8 +49,13 @@ namespace Models.Models
         [ValidateNever]
 
         public category Category { get; set; }
-        [ValidateNever]
 
-        public string ImageUrl { get; set; }
+        //public string ImageUrl { get; set; }
+
+        //public int TestProperty { get; set; }
+
+
+        [ValidateNever]
+        public List<ProductImage> ProductImages { get; set; }
     }
 }

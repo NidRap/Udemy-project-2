@@ -27,6 +27,7 @@ public class ApplicationDbContext :IdentityDbContext<IdentityUser>
     public DbSet<OrderHeader> OrderHeaders { get; set; }
     public DbSet<OrderDetail> OrderDetails { get; set; }
 
+    public DbSet<ProductImage> ProductImages { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -51,7 +52,7 @@ public class ApplicationDbContext :IdentityDbContext<IdentityUser>
                     Price = 90,
                     Price50 = 85,
                     Price100 = 80,
-                    ImageUrl = "",
+                  //  ImageUrl = "",
                     CategoryId = 1
                 },
                 new Product
@@ -66,7 +67,7 @@ public class ApplicationDbContext :IdentityDbContext<IdentityUser>
                     Price50 = 25,
                     Price100 = 20,
                     CategoryId = 1,
-                      ImageUrl = "",
+                 //     ImageUrl = "",
 
                 },
                 new Product
@@ -80,7 +81,7 @@ public class ApplicationDbContext :IdentityDbContext<IdentityUser>
                     Price = 50,
                     Price50 = 40,
                     Price100 = 35,
-                    ImageUrl = "",
+                  //  ImageUrl = "",
                     CategoryId = 1
 
                 },
@@ -95,7 +96,7 @@ public class ApplicationDbContext :IdentityDbContext<IdentityUser>
                     Price = 65,
                     Price50 = 60,
                     Price100 = 55,
-                    ImageUrl = "",
+                  //  ImageUrl = "",
                     CategoryId = 2
 
                 },
@@ -110,7 +111,7 @@ public class ApplicationDbContext :IdentityDbContext<IdentityUser>
                     Price = 27,
                     Price50 = 25,
                     Price100 = 20,
-                    ImageUrl = "",
+                 //   ImageUrl = "",
                     CategoryId = 2
 
                 },
@@ -125,7 +126,7 @@ public class ApplicationDbContext :IdentityDbContext<IdentityUser>
                     Price = 23,
                     Price50 = 22,
                     Price100 = 20,
-                    ImageUrl = "",
+                 //   ImageUrl = "",
                     CategoryId = 3
 
                 }
